@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
         emailInput.value = emailInput.value.split(' ').join('');
         const yourEmail = emailInput.value;
         let count = yourEmail.length -2;
-        emailYour.innerHTML = `
-        Ваш email: ${yourEmail.slice(2)} <i class="fa fa-info-circle" aria-hidden="true" contenteditable="false"></i>
-        `;
+        if (count < 0) {
+            count = 0;
+        }
         inputCounter.textContent = `${count} / ${maxLength}`;
         if (count >= maxLength || count === 0) {
             inputCounter.style.color = 'red'
@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
         const yourEmail = emailInput.value;
         let count = yourEmail.length;
         emailInput.style.border = '1px solid green'
-            emailYour.innerHTML = `
-            Ваш email: ${yourEmail.slice(2)} </div><i class="fa fa-info-circle" aria-hidden="true" contenteditable="false"></i>
-            `;
             if(count > 0) {
                 inputCounter.textContent = `${count-2} / ${maxLength}`;
             } else {
