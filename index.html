@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./fontawesome-free-5.5.0-web/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="buttons-wrapper">
+        <span>Действия</span>
+        <button class="green"><i class="fa fa-rocket" aria-hidden="true"> Запустить Соревнования</i></button>
+        <button class="fa"> Подобрать судей</button>
+        <button class="blue fa"> Режим завершения без проведения</button>
+        <button class="buttons-wrapper__hidden blue"><i class="fa fa-fast-forward" aria-hidden="true"> Завершить без
+                проведения</i></button>
+        <div class="buttons-wrapper__small">
+            <button class="green"><i class="fa fa-file-pdf-o" aria-hidden="true"> Экспорт протоколов</i></button>
+            <button class="remove red"><i class="fa fa-trash" aria-hidden="true"> Удалить</i></button>
+        </div>
+        <div class="border">
+            <i class="fa fa-plus-circle circle-top" aria-hidden="true"></i>
+            <div class="survey">
+                <div class="survey__wrapper">
+                    <div class="survey__wrapper-email">
+                        <div class="some-text">
+                            some text
+                            <input type="text" class="some">
+                        </div>
+                        <br>
+                        <div class="some-text">
+                            some text
+                            <input type="text" class="some">
+                        </div>
+                        <br>
+                        <div class="some-text">
+                            some text
+                            <input type="text" class="some">
+                        </div>
+                        <br>
+                        <div class="email-wrapper">
+                            <div class="email email-your" contenteditable="true" onkeypress="
+                            return (this.innerText.length <= 40)">Ваш email:
+                                <i class="fa fa-info-circle" aria-hidden="true" ></i>
+                            </div>
+                            <input type="text" class="input email-input" maxlength="32"
+                                placeholder="@ | example@example.com">
+                        </div>
+
+                    </div>
+                    <div class="input-counter "></div>
+                </div>
+                <div class="border-blue">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                    <i class="fa fa-arrows" aria-hidden="true"></i>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+            <img>
+            <i class="fa fa-plus-circle circle-bottom" aria-hidden="true"></i>
+        </div>
+    </div>
+    <br />
+    <script src="./script.js"></script>
+</body>
+
+</html>

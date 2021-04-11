@@ -1,0 +1,138 @@
+*
+    box-sizing: border-box
+
+button
+    margin-top: 3px
+    margin-bottom: 3px
+    padding: 13px
+    border-radius: 5px
+    border: none
+    font-size: 17px
+.buttons
+    &-wrapper
+        display: inline
+        &__hidden
+            display: none
+        &__small
+            display: inline
+.survey
+    &__wrapper
+        width: 300px
+        display: flex
+        padding: 10px
+        flex-direction: column
+        align-items: center
+        align-self: center
+        &-email
+            outline: none
+            display: flex
+            flex-direction: column
+            width: 100%
+            align-items: flex-start
+.green
+    background-color: #2aaf94
+    color: #fff
+.blue
+    background-color: #5bc0de
+    color: #fff
+.red
+    background-color: #d9534f
+    color: #fff
+.hide
+    display: none
+.input
+    width: 100%
+    height: 30px
+    outline: none
+    border: 1px solid gray
+    border-radius: 5px
+    &-counter
+        height: 20px
+        align-self: flex-end
+        color: red
+    &-email
+        margin: 3px
+.fa
+    cursor: pointer
+    &-info
+        &-circle
+            color: gray
+            align-self: flex-end
+            cursor: auto
+.email
+    &-wrapper
+        width: 100%
+        // height: 60px
+        overflow: hidden
+    &__wrapper
+        display: flex
+
+    &-your
+        outline: none
+        // height: 40px
+.border
+    position: relative
+    margin-top: 50px
+    width: 300px
+    height: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 2px dashed transparent
+    transition: border .5s ease
+    overflow: visible
+    flex-direction: column
+    z-index: 0
+    &:hover
+        border: 2px dashed #4b82d6
+        transition: border .5s ease
+        transition: border .1s
+        overflow: visible
+    &:hover .border-blue
+        transition: .5s ease
+        visibility: visible
+    &:hover .circle-bottom
+        visibility: visible
+        transition: .5s ease
+    &:hover .circle-top
+        visibility: visible
+        transition: .5s ease
+    &-blue
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        width: 120px
+        height: 30px
+        position: absolute
+        right: 0
+        top: 0
+        transition: .3s ease
+        background-color: #4b82d6
+        color: white
+        visibility: hidden
+.some
+    border: 1px solid gray
+    border-radius: 4px
+    outline: none
+.circle
+    &-bottom
+        z-index: 3
+        position: absolute
+        bottom: -9px
+        left: 50%
+        visibility: hidden
+        align-self: flex-end
+        color: #4b82d6
+        z-index: 3
+        background-color: #fff
+    &-top
+        z-index: 3
+        position: absolute
+        top: -9px
+        right: inherit
+        left: 50%
+        visibility: hidden
+        align-self: flex-start
+        color: #4b82d6
+        z-index: 3
+        background-color: #fff
